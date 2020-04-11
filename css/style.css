@@ -1,0 +1,415 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+    /* font-family: 'Montserrat Alternates', sans-serif; */
+}
+.container {
+    width: 1296px;
+    margin: 0 auto;
+}
+.header {
+    background-image: url(../img/courier.png);
+    background-repeat: no-repeat;
+    height: 711px;
+}
+.header-top {
+    display: flex;
+}
+.header-top__logo {
+    margin-top: 41px;
+}
+.header-top__menu {
+    margin-left: 242px;
+    margin-top: 41px;
+}
+.nav ul {
+    display: flex;
+}
+.nav > ul > li > a {
+    font-size: 16px;
+    line-height: 19px;
+    color: #323232;
+    text-decoration: none;
+}
+.nav > ul > li > a > span {
+    color: #FFE671;
+}
+.nav > ul > li {
+    margin-right: 30px;
+}
+.header-main__title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 73px;
+    color: #323232;
+    margin-top: 75px;
+}
+.header-main__delivery {
+    display: flex;
+}
+.header-main__delivery-buy {
+    font-size: 28px;
+    line-height: 40px;
+    color: #323232;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.header-main__delivery-map {
+    display: flex;
+    margin-left: 320px;
+    margin-top: 70px;
+}
+.header-main__delivery-map__txt {
+    font-size: 16px;
+    line-height: 24px;
+    color: #323232;
+    opacity: 0.6;
+}
+.header-main__delivery-map__img {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 40px;
+    text-align: center;
+    margin-left: 20px;
+    top: -13px;
+}
+.header-main__delivery-map__img img {
+    position: absolute;
+    top: 37%;
+    left: 22px;
+    margin-top: -0.625em;
+}
+.header-main__btn a {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #323232;
+    background: #FFE671;
+    border-radius: 99px;
+    text-decoration: none;
+    padding: 25px 42px;
+}
+.header-main__btn > a > img {
+    margin-left: 17px;
+}
+.block {
+    width: 1085px;
+    margin:  0 auto;
+    background: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0px 16px 48px rgba(19, 30, 71, 0.1);
+    height: 230px;
+    margin-top: -50px;
+    margin-bottom: 200px;
+}
+.block-wrap {
+    display: flex;
+}
+.block-wrap__item {
+    width: 170px;
+    margin-left: 90px;
+}
+.block-wrap__item:last-child {
+    margin-left: 0;
+}
+.block-wrap__item-number {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center; 
+    color: #FFE671;
+    margin-top: 50px;
+}
+.block-wrap__item-name {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFE671;
+    margin-top: 5px;
+}
+.block-wrap__item-desc {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #323232;  
+    margin-top: 15px;  
+}
+.market-title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #323232;    
+    margin-bottom: 60px;
+}
+.market-wrap {
+    display: flex;
+}
+.market-wrap__item {
+    width: 303px;
+    height: 276px;
+    margin-bottom: 50px;
+    margin-right: 30px;
+}
+.market-wrap__item:last-child {
+    margin-right: 0;
+}
+.market-wrap__item-name {
+    display: flex;
+    justify-content: space-between;
+}
+.market-wrap__item-number {
+    display: flex;
+    justify-content: space-between;
+}
+.market-wrap__item-name__title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #323232;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+.market-wrap__item-name__raiting {
+    background: #FFE671;
+    border-radius: 9px; 
+    padding: 0 8px;   
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+.market-wrap__item-name__raiting p {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin-top: 2px;
+}
+.market-wrap__item-number__order {
+    font-size: 15px;
+    line-height: 18px;
+    color: #323232;
+}
+.market-wrap__item-number__review {
+    font-size: 15px;
+    line-height: 18px;
+    text-align: right;
+    color: #323232;
+    opacity: 0.5;
+}
+.bottom {
+    margin-bottom: 10px;
+}
+.market-wrap__bottom {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFE671;   
+    text-align: center;
+}
+.market-wrap__bottom > p > img {
+    margin-left: 8px;
+}
+.market {
+    margin-bottom: 130px;
+}
+.apps {
+    height: 485px;
+    background: #F0FAFF;
+    margin-bottom: 150px;
+}
+.apps-wrap {
+    display: flex;
+    margin-left: 420px;
+}
+.apps-wrap__item {
+    margin-left: 143px;
+}
+.apps-wrap__item-title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 50px;
+    color: #323232;
+    margin-top: 60px;
+}
+.apps-wrap__item-desc {
+    font-size: 22px;
+    line-height: 34px;
+    color: #323232;
+    margin-top: 20px;
+}
+.apps-wrap__item-contact {
+    display: flex;
+    margin-top: 40px;
+}
+.apps-wrap__item-contact__number {
+    border: 1px solid #D2D2D2;
+    box-sizing: border-box;
+    border-radius: 99px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #323232;
+    opacity: 0.3;
+    padding: 30px 60px;
+    margin-right: 40px;
+}
+.apps-wrap__item-contact__btn p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #323232;
+    background: #FFE671;
+    border-radius: 99px;
+    padding: 26px 46px;
+}
+.apps-wrap__item-contact__btn > p > img{
+    margin-left: 10px;
+}
+.review-title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    color: #323232;   
+    margin-bottom: 60px;
+}
+.review-wrap {
+    width: 823px;
+    height: 384px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    margin-bottom: 150px;
+}
+.review-wrap__title p {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: #323232;
+    padding-top: 70px;
+}
+.wrap {
+    margin-left: 90px;
+}
+.review-wrap__desc {
+    font-size: 18px;
+    line-height: 30px;
+    color: #323232;
+    width: 642px;
+    margin-top: 20px;
+}
+.review-wrap__profile {
+    display: flex;
+}
+.review-wrap__profile-img {
+    margin-top: 50px;
+}
+.review-wrap__profile-desc {
+    margin-top: 60px;
+    margin-left: 20px;
+}
+.review-wrap__profile-desc__name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: #323232;
+    margin-bottom: 10px;
+}
+.review-wrap__profile-desc__link {
+    font-size: 14px;
+    line-height: 14px;
+    color: #323232;
+    opacity: 0.5;
+}
+.footer {
+    margin-top: 50px;
+}
+.footer-wrap {
+    display: flex;
+    margin-bottom: 75px;
+}
+.rht {
+    margin-right: 93px;
+}
+.rht2 {
+    margin-right: 120px;
+}
+.footer-wrap__item-desc {
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #CACFD2; 
+    margin-top: 30px;   
+}
+.line {
+    border-bottom: 1px solid #D2DCE1;
+}
+.footer-wrap__item-txt {
+    font-size: 16px;
+    line-height: 16px;
+    color: #CACFD2;
+}
+.top {
+    margin-top: 50px;
+}
+.appstore {
+    margin-top: 40px;
+}
+.googleplay {
+    margin-top: 30px;
+}
+
